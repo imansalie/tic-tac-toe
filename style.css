@@ -1,0 +1,93 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif; /* Sci-fi inspired font */
+}
+
+/* Background styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0f0f0f, #131313, #1c1c1c);
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0ff, 0 0 25px #f0f, 0 0 50px #00ffff;
+}
+
+.game-info {
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #131313;
+    color: #0ff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #f0f, 0 0 10px #00ffff;
+    transition: all 0.3s ease;
+}
+
+input:hover, button:hover {
+    background-color: #0ff;
+    color: #131313;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    margin: 20px auto;
+}
+
+.game-board div {
+    width: 120px;
+    height: 120px;
+    background-color: #131313;
+    color: #00ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    border: 2px solid #f0f;
+    box-shadow: 0 0 10px #0ff;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.game-board div:hover {
+    background-color: #0ff;
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #f0f;
+}
+
+.game-status {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #f0f;
+    text-shadow: 0 0 10px #f0f, 0 0 20px #ff00ff;
+}
+
+#reset-btn {
+    margin-top: 20px;
+}
