@@ -155,4 +155,13 @@ const DisplayController = (() => {
     };
 })();
 
+// Event listeners for the start and reset buttons
+document.getElementById("start-btn").addEventListener("click", () => {
+    const player1Name = document.getElementById("player1").value || "Player 1";
+    const player2Name = document.getElementById("player2").value || "Player 2";
+    GameController.startGame(player1Name, player2Name);
+});
 
+document.getElementById("reset-btn").addEventListener("click", () => {
+    GameController.startGame("Player 1", "Player 2");
+});
